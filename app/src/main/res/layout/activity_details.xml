@@ -109,6 +109,6 @@
         android:layout_height="48dp"
         android:id="@+id/button2"
         android:layout_gravity="right"
-        android:background="@drawable/new" />
+        android:background="@drawable/add2" />
 
 </LinearLayout>
