@@ -12,10 +12,10 @@
         android:hint="Post here" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:background="@drawable/check2"
         android:id="@+id/button"
         android:layout_gravity="right|center_vertical"
-        android:onClick="post" />
+        android:onClick="post"
+        android:layout_width="60dp"
+        android:layout_height="50dp"/>
 </FrameLayout>
