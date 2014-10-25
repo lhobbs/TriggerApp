@@ -6,6 +6,7 @@ import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,8 +31,12 @@ public class Home extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.home, menu);
-        return true;
+
+        //getMenuInflater().inflate(R.menu.home, menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.home, menu);
+        return super.onCreateOptionsMenu(menu);
+        //return true;
     }
 
     @Override
@@ -40,7 +45,8 @@ public class Home extends Activity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
+
+        if (id == R.id.new_post){
             return true;
         }
         return super.onOptionsItemSelected(item);
