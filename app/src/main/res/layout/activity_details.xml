@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListActivity" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="281dp">
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:text="User post goes here"
+            android:id="@+id/textView3"
+            android:layout_gravity="center"
+            android:background="#cae666"
+            android:clickable="true"
+            android:textSize="36dp"
+            android:typeface="sans"
+            android:textColor="#FFF" />
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="63dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:measureWithLargestChild="false">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textView"
+                android:layout_column="0"
+                android:shadowColor="#eeeeee"
+                android:background="@drawable/tag" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:id="@+id/textView4"
+        android:textStyle="bold"
+        android:textSize="16dp" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="303dp" >
+    </ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="94dp"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_gravity="right" />
+
+</LinearLayout>

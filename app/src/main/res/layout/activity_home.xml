@@ -4,4 +4,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home"
-    tools:ignore="MergeRootFrame" />
+    tools:ignore="MergeRootFrame">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ignore"
+        android:id="@+id/button"
+        android:layout_gravity="left|bottom"
+        android:onClick="ignore" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View"
+        android:id="@+id/button2"
+        android:layout_gravity="right|bottom"
+        android:onClick="details" />
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="User Post Goes Here"
+        android:id="@+id/textView"
+        android:layout_gravity="center"
+        android:background="#cae666"
+        android:textColor="#FFF"
+        android:textSize="36dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/button3"
+        android:layout_gravity="center_horizontal|top"
+        android:onClick="newPost" />
+
+</FrameLayout>
