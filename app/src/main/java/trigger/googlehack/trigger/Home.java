@@ -10,20 +10,27 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
-
+import android.content.Intent;
+import android.widget.EditText;
+import android.widget.TextView;
 
 
 public class Home extends Activity {
+
+    static TextView currPost;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        if (savedInstanceState == null) {
-            getFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
-                    .commit();
+
+        String currentPost = "Default Post";
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            currentPost = extras.getString("myPost");
         }
+        currPost = (TextView) findViewById(R.id.textView);
+        currPost.setText(currentPost);
     }
 
 
@@ -46,19 +53,27 @@ public class Home extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * A placeholder fragment containing a simple view.
-     */
-    public static class PlaceholderFragment extends Fragment {
 
-        public PlaceholderFragment() {
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_home, container, false);
-            return rootView;
-        }
+    /** Called when the user clicks the view button */
+    public void  details(View view) {
+        // Do something in response to button
+        Intent intent = new Intent(this, Details.class);
+        startActivity(intent);
     }
+
+    /** Called when the user clicks the ignore button */
+    public void  ignore(View view) {
+        // Do something in response to button
+        Intent intent = new Intent(this, Home.class);
+        startActivity(intent);
+    }
+
+    /** Called when the user clicks the add button */
+    public void  newPost(View view) {
+        // Do something in response to button
+        Intent intent = new Intent(this, Add.class);
+        intent.putExtra("myPost", "A New Post");
+        startActivity(intent);
+    }
+
 }
