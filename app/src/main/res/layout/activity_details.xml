@@ -22,6 +22,15 @@
             android:textColor="#FFF" />
     </FrameLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tags"
+        android:id="@+id/textView6"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="8dp" />
+
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="63dp"
@@ -32,7 +41,7 @@
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:paddingLeft="15dp"
+            android:paddingLeft="0dp"
             android:paddingTop="8dp"
             android:paddingRight="0dp"
             android:paddingBottom="0dp">
@@ -41,11 +50,39 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Medium Text"
+                android:text="Sexist"
                 android:id="@+id/textView"
                 android:layout_column="0"
                 android:shadowColor="#eeeeee"
-                android:background="@drawable/tag" />
+                android:background="@drawable/tag"
+                android:textColor="#fff"
+                android:layout_marginRight="10dp"
+                android:padding="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Classist"
+                android:id="@+id/textView5"
+                android:layout_column="1"
+                android:shadowColor="#eeeeee"
+                android:background="@drawable/tag"
+                android:textColor="#fff"
+                android:padding="3dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Ableist"
+                android:id="@+id/textView7"
+                android:layout_column="2"
+                android:shadowColor="#eeeeee"
+                android:background="@drawable/tag"
+                android:textColor="#fff"
+                android:padding="3dp" />
 
         </TableRow>
     </TableLayout>
@@ -56,19 +93,13 @@
         android:text="Comments"
         android:id="@+id/textView4"
         android:textStyle="bold"
-        android:textSize="16dp" />
+        android:textSize="18dp"
+        android:layout_marginLeft="8dp" />
 
     <ListView
-        android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="303dp" >
-    </ListView>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="94dp"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_gravity="right" />
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>

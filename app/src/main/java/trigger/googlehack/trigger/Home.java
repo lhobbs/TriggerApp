@@ -15,12 +15,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class Home extends Activity {
+public class Home extends MainActivity {
 
     static TextView currPost;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
