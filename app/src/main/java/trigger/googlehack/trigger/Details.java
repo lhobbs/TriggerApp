@@ -74,4 +74,11 @@ public class Details extends Activity {
         startActivity(intent);
     }
 
+
+    /** Called when the user clicks the add button */
+    public void  newPost(View view) {
+        Intent intent = new Intent(this, Add.class);
+        intent.putExtra("myPost", "A New Post");
+        startActivity(intent);
+    }
 }
