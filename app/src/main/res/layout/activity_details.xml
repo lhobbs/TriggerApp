@@ -85,21 +85,30 @@
                 android:padding="3dp" />
 
         </TableRow>
-    </TableLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Comments"
-        android:id="@+id/textView4"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:layout_marginLeft="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:id="@+id/textView4"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginLeft="8dp" />
+
+    </TableLayout>
 
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="106dp"
         android:id="@+id/list"
         android:layout_gravity="center_horizontal" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:id="@+id/button2"
+        android:layout_gravity="right"
+        android:background="@drawable/new" />
 
 </LinearLayout>
