@@ -46,7 +46,7 @@ public class Add extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    /** Called when the user clicks the ignore button */
+    /** Called when the user clicks the post button */
     public void  post(View view) {
         // Do something in response to button
         Intent intent = new Intent(this, Home.class);
