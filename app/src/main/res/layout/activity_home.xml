@@ -7,20 +7,20 @@
     tools:ignore="MergeRootFrame">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ignore"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
         android:id="@+id/button"
         android:layout_gravity="left|bottom"
-        android:onClick="ignore" />
+        android:onClick="ignore"
+        android:background="@drawable/ignore" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View"
+        android:layout_width="81dp"
+        android:layout_height="97dp"
         android:id="@+id/button2"
         android:layout_gravity="right|bottom"
-        android:onClick="details" />
+        android:onClick="details"
+        android:background="@drawable/talk" />
 
     <TextView
         android:layout_width="320dp"
@@ -34,11 +34,11 @@
         android:textSize="36dp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add"
+        android:layout_width="96dp"
+        android:layout_height="95dp"
         android:id="@+id/button3"
         android:layout_gravity="center_horizontal|top"
-        android:onClick="newPost" />
+        android:onClick="newPost"
+        android:background="@drawable/new"/>
 
 </FrameLayout>
